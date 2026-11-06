@@ -1,6 +1,25 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scenes/levels/main.gd" id="1_mainscript"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="2_player"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
+size = Vector2(1152, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_leftwall"]
+size = Vector2(32, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rightwall"]
+size = Vector2(32, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_platform1"]
+size = Vector2(256, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_platform2"]
+size = Vector2(256, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_platform3"]
+size = Vector2(256, 24)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_mainscript")
@@ -11,43 +30,92 @@ color = Color(0.05, 0.05, 0.09, 1)
 
 [node name="TitleLabel" type="Label" parent="."]
 offset_left = 100.0
-offset_top = 60.0
+offset_top = 40.0
 offset_right = 1052.0
-offset_bottom = 120.0
+offset_bottom = 100.0
 theme_override_font_sizes/font_size = 36
 text = "Arjun: The Rise of Kaalasur"
 horizontal_alignment = 1
 
 [node name="InfoLabel" type="Label" parent="."]
 offset_left = 100.0
-offset_top = 140.0
+offset_top = 110.0
 offset_right = 1052.0
-offset_bottom = 180.0
+offset_bottom = 150.0
 theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_font_sizes/font_size = 18
-text = "Milestone 0 — Project Foundation — No gameplay yet"
+text = "Milestone 1 — Movement Prototype"
 horizontal_alignment = 1
 
-[node name="Ground" type="Polygon2D" parent="."]
+[node name="ControlsLabel" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 155.0
+offset_right = 1052.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(0.95, 0.85, 0.4, 1)
+theme_override_font_sizes/font_size = 16
+text = "Controls (test): Left / Right arrow ya A / D = chalna, Space = jump"
+horizontal_alignment = 1
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(576, 616)
+shape = SubResource("RectangleShape2D_ground")
+
+[node name="Visual" type="Polygon2D" parent="Ground"]
 polygon = PackedVector2Array(0, 584, 1152, 584, 1152, 648, 0, 648)
 color = Color(0.25, 0.2, 0.15, 1)
 
-[node name="Arjun" type="Node2D" parent="."]
+[node name="LeftWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2(16, 324)
+shape = SubResource("RectangleShape2D_leftwall")
+
+[node name="Visual" type="Polygon2D" parent="LeftWall"]
+polygon = PackedVector2Array(0, 0, 32, 0, 32, 648, 0, 648)
+color = Color(0.15, 0.12, 0.1, 1)
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+position = Vector2(1136, 324)
+shape = SubResource("RectangleShape2D_rightwall")
+
+[node name="Visual" type="Polygon2D" parent="RightWall"]
+polygon = PackedVector2Array(1120, 0, 1152, 0, 1152, 648, 1120, 648)
+color = Color(0.15, 0.12, 0.1, 1)
+
+[node name="Platform1" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1"]
+position = Vector2(320, 484)
+shape = SubResource("RectangleShape2D_platform1")
+
+[node name="Visual" type="Polygon2D" parent="Platform1"]
+polygon = PackedVector2Array(192, 472, 448, 472, 448, 496, 192, 496)
+color = Color(0.3, 0.25, 0.18, 1)
+
+[node name="Platform2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+position = Vector2(832, 396)
+shape = SubResource("RectangleShape2D_platform2")
+
+[node name="Visual" type="Polygon2D" parent="Platform2"]
+polygon = PackedVector2Array(704, 384, 960, 384, 960, 408, 704, 408)
+color = Color(0.3, 0.25, 0.18, 1)
+
+[node name="Platform3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3"]
+position = Vector2(448, 308)
+shape = SubResource("RectangleShape2D_platform3")
+
+[node name="Visual" type="Polygon2D" parent="Platform3"]
+polygon = PackedVector2Array(320, 296, 576, 296, 576, 320, 320, 320)
+color = Color(0.3, 0.25, 0.18, 1)
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
 position = Vector2(200, 552)
-
-[node name="Body" type="Polygon2D" parent="Arjun"]
-polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-color = Color(0.2, 0.5, 0.9, 1)
-
-[node name="Sword" type="Polygon2D" parent="Arjun"]
-polygon = PackedVector2Array(32, -10, 46, -10, 46, 10, 32, 10)
-color = Color(0.95, 0.8, 0.2, 1)
-
-[node name="ArjunLabel" type="Label" parent="."]
-offset_left = 136.0
-offset_top = 480.0
-offset_right = 264.0
-offset_bottom = 510.0
-theme_override_font_sizes/font_size = 16
-text = "Arjun 64x64"
-horizontal_alignment = 1
