@@ -1,0 +1,8 @@
+# Godot 4 — do NOT commit these to GitHub
+# .godot/ is Godot's cache. Godot makes it again automatically.
+# It has very long filenames and breaks Git on Windows.
+.godot/
+
+# OS junk files
+Thumbs.db
+.DS_Store

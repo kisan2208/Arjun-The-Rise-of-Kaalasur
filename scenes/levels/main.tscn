@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/levels/main.gd" id="1_mainscript"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_mainscript")
+
+[node name="Background" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 1152, 0, 1152, 648, 0, 648)
+color = Color(0.05, 0.05, 0.09, 1)
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 60.0
+offset_right = 1052.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 36
+text = "Arjun: The Rise of Kaalasur"
+horizontal_alignment = 1
+
+[node name="InfoLabel" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 140.0
+offset_right = 1052.0
+offset_bottom = 180.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_font_sizes/font_size = 18
+text = "Milestone 0 — Project Foundation — No gameplay yet"
+horizontal_alignment = 1
+
+[node name="Ground" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, 584, 1152, 584, 1152, 648, 0, 648)
+color = Color(0.25, 0.2, 0.15, 1)
+
+[node name="Arjun" type="Node2D" parent="."]
+position = Vector2(200, 552)
+
+[node name="Body" type="Polygon2D" parent="Arjun"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+color = Color(0.2, 0.5, 0.9, 1)
+
+[node name="Sword" type="Polygon2D" parent="Arjun"]
+polygon = PackedVector2Array(32, -10, 46, -10, 46, 10, 32, 10)
+color = Color(0.95, 0.8, 0.2, 1)
+
+[node name="ArjunLabel" type="Label" parent="."]
+offset_left = 136.0
+offset_top = 480.0
+offset_right = 264.0
+offset_bottom = 510.0
+theme_override_font_sizes/font_size = 16
+text = "Arjun 64x64"
+horizontal_alignment = 1
