@@ -1,0 +1,142 @@
+{
+  "group_id": "b140f7b4-025f-4d5b-a261-9934eb098276",
+  "states": [
+    {
+      "character": {
+        "id": "a362b716-0f46-48ae-a844-bfdaac3e2d45",
+        "name": "Create a smooth and",
+        "prompt": "Create a beautiful, highly detailed pixel-art character named ARJUN, the main protagonist of an Indian fantasy action-adventure game called \"Arjun: The Rise of Kaalasur\".  CHARACTER DESIGN:  - Young Indian male warrior, approximately 20 years old. - Handsome anime-inspired face with a confident, determined expression. - Athletic, lean and agile body, suitable for a fast-paced platformer. - Beautifully designed messy, spiky dark black hair with multiple layered locks and slightly pointed ends. - A distinctive red tilak on his forehead. - Expressive dark eyes and warm natural skin tone.  CLOTHING:  - Elegant dark charcoal sleeveless warrior tunic with intricate golden borders. - A beautiful long crimson-red scarf wrapped around his neck and shoulders, with two long flowing ends behind him. - Traditional white Indian dhoti-style trousers with detailed fabric folds. - Deep red waist sash with delicate golden patterns. - Ornamental golden waist belt with a circular centerpiece. - Golden arm bands, wrist guards and ankle ornaments. - Traditional dark brown warrior sandals with golden details.  ANIMATION-FRIENDLY DESIGN:  - Hair must have clearly separated locks that can move independently. - Scarf must have two distinct flowing ends, suitable for frame-by-frame animation. - Dhoti fabric should have recognizable folds and natural movement. - Keep the silhouette clean and recognizable. - Both hands should be visible and naturally positioned. - Keep the hands empty and relaxed.  PIXEL ART STYLE:  - Premium cinematic 2D pixel art. - Beautiful anime-inspired pixel-art aesthetics. - Rich color depth with carefully placed highlights and shadows. - Clean, crisp pixel clusters and detailed outlines. - Professional indie action-RPG character quality. - Beautiful red, gold, charcoal and ivory color palette. - Consistent pixel density without blurry or smoothed edges.",
+        "size": {
+          "width": 64,
+          "height": 64
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-11-15T16:03:59.358744+00:00"
+      },
+      "folder": "Create_a_smooth_and",
+      "frames": {
+        "rotations": {
+          "south": "Create_a_smooth_and/rotations/south.png",
+          "south-east": "Create_a_smooth_and/rotations/south-east.png",
+          "east": "Create_a_smooth_and/rotations/east.png",
+          "north-east": "Create_a_smooth_and/rotations/north-east.png",
+          "north": "Create_a_smooth_and/rotations/north.png",
+          "north-west": "Create_a_smooth_and/rotations/north-west.png",
+          "west": "Create_a_smooth_and/rotations/west.png",
+          "south-west": "Create_a_smooth_and/rotations/south-west.png"
+        },
+        "animations": {
+          "Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex": {
+            "east": [
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_000.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_001.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_002.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_003.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_004.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_005.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_006.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_007.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_008.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_009.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_010.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_011.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_012.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_013.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_014.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_015.png",
+              "Create_a_smooth_and/animations/Create_a_detailed_DOUBLE_JUMP_animation_for_the_ex/east/frame_016.png"
+            ]
+          },
+          "Create_a_fast_smooth_RUN_animation_for_the_existin": {
+            "east": [
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_000.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_001.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_002.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_003.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_004.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_005.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_006.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_007.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_008.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_009.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_010.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_011.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_012.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_013.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_014.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_015.png",
+              "Create_a_smooth_and/animations/Create_a_fast_smooth_RUN_animation_for_the_existin/east/frame_016.png"
+            ]
+          },
+          "Create_a_smooth_and_natural_IDLE_animation_for_the": {
+            "east": [
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_000.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_001.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_002.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_003.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_004.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_005.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_006.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_007.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_008.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_009.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_010.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_011.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_012.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_013.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_014.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_015.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_natural_IDLE_animation_for_the/east/frame_016.png"
+            ]
+          },
+          "Create_a_smooth_and_detailed_JUMP_animation_for_th": {
+            "east": [
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_000.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_001.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_002.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_003.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_004.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_005.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_006.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_007.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_008.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_009.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_010.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_011.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_012.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_013.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_014.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_015.png",
+              "Create_a_smooth_and/animations/Create_a_smooth_and_detailed_JUMP_animation_for_th/east/frame_016.png"
+            ]
+          },
+          "Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f": {
+            "east": [
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_000.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_001.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_002.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_003.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_004.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_005.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_006.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_007.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_008.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_009.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_010.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_011.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_012.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_013.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_014.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_015.png",
+              "Create_a_smooth_and/animations/Create_a_Swordigo-inspired_DOUBLE_JUMP_animation_f/east/frame_016.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-11-15T17:55:13.271062"
+}
