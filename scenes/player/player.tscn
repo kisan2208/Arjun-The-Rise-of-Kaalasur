@@ -1,34 +1,167 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=72 format=3]
 
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player"]
 
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_000.png" id="idle_000"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_001.png" id="idle_001"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_002.png" id="idle_002"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_003.png" id="idle_003"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_004.png" id="idle_004"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_005.png" id="idle_005"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_006.png" id="idle_006"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_007.png" id="idle_007"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_008.png" id="idle_008"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_009.png" id="idle_009"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_010.png" id="idle_010"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_011.png" id="idle_011"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_012.png" id="idle_012"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_013.png" id="idle_013"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_014.png" id="idle_014"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_015.png" id="idle_015"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/idle/frame_016.png" id="idle_016"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_000.png" id="run_000"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_001.png" id="run_001"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_002.png" id="run_002"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_003.png" id="run_003"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_004.png" id="run_004"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_005.png" id="run_005"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_006.png" id="run_006"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_007.png" id="run_007"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_008.png" id="run_008"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_009.png" id="run_009"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_010.png" id="run_010"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_011.png" id="run_011"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_012.png" id="run_012"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_013.png" id="run_013"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_014.png" id="run_014"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_015.png" id="run_015"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/run/frame_016.png" id="run_016"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_000.png" id="jump_000"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_001.png" id="jump_001"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_002.png" id="jump_002"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_003.png" id="jump_003"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_004.png" id="jump_004"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_005.png" id="jump_005"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_006.png" id="jump_006"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_007.png" id="jump_007"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_008.png" id="jump_008"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_009.png" id="jump_009"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_010.png" id="jump_010"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_011.png" id="jump_011"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_012.png" id="jump_012"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_013.png" id="jump_013"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_014.png" id="jump_014"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_015.png" id="jump_015"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/jump/frame_016.png" id="jump_016"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_000.png" id="double_jump_000"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_001.png" id="double_jump_001"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_002.png" id="double_jump_002"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_003.png" id="double_jump_003"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_004.png" id="double_jump_004"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_005.png" id="double_jump_005"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_006.png" id="double_jump_006"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_007.png" id="double_jump_007"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_008.png" id="double_jump_008"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_009.png" id="double_jump_009"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_010.png" id="double_jump_010"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_011.png" id="double_jump_011"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_012.png" id="double_jump_012"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_013.png" id="double_jump_013"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_014.png" id="double_jump_014"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_015.png" id="double_jump_015"]
+
+[ext_resource type="Texture2D" path="res://assets/characters/animations/double_jump/frame_016.png" id="double_jump_016"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
+
 size = Vector2(48, 64)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_arjun"]
+
+animations = [{"frames": [{"duration": 1.0, "texture": ExtResource("idle_000")}, {"duration": 1.0, "texture": ExtResource("idle_001")}, {"duration": 1.0, "texture": ExtResource("idle_002")}, {"duration": 1.0, "texture": ExtResource("idle_003")}, {"duration": 1.0, "texture": ExtResource("idle_004")}, {"duration": 1.0, "texture": ExtResource("idle_005")}, {"duration": 1.0, "texture": ExtResource("idle_006")}, {"duration": 1.0, "texture": ExtResource("idle_007")}, {"duration": 1.0, "texture": ExtResource("idle_008")}, {"duration": 1.0, "texture": ExtResource("idle_009")}, {"duration": 1.0, "texture": ExtResource("idle_010")}, {"duration": 1.0, "texture": ExtResource("idle_011")}, {"duration": 1.0, "texture": ExtResource("idle_012")}, {"duration": 1.0, "texture": ExtResource("idle_013")}, {"duration": 1.0, "texture": ExtResource("idle_014")}, {"duration": 1.0, "texture": ExtResource("idle_015")}, {"duration": 1.0, "texture": ExtResource("idle_016")}], "loop": true, "name": &"idle", "speed": 10}, {"frames": [{"duration": 1.0, "texture": ExtResource("run_000")}, {"duration": 1.0, "texture": ExtResource("run_001")}, {"duration": 1.0, "texture": ExtResource("run_002")}, {"duration": 1.0, "texture": ExtResource("run_003")}, {"duration": 1.0, "texture": ExtResource("run_004")}, {"duration": 1.0, "texture": ExtResource("run_005")}, {"duration": 1.0, "texture": ExtResource("run_006")}, {"duration": 1.0, "texture": ExtResource("run_007")}, {"duration": 1.0, "texture": ExtResource("run_008")}, {"duration": 1.0, "texture": ExtResource("run_009")}, {"duration": 1.0, "texture": ExtResource("run_010")}, {"duration": 1.0, "texture": ExtResource("run_011")}, {"duration": 1.0, "texture": ExtResource("run_012")}, {"duration": 1.0, "texture": ExtResource("run_013")}, {"duration": 1.0, "texture": ExtResource("run_014")}, {"duration": 1.0, "texture": ExtResource("run_015")}, {"duration": 1.0, "texture": ExtResource("run_016")}], "loop": true, "name": &"run", "speed": 20}, {"frames": [{"duration": 1.0, "texture": ExtResource("jump_000")}, {"duration": 1.0, "texture": ExtResource("jump_001")}, {"duration": 1.0, "texture": ExtResource("jump_002")}, {"duration": 1.0, "texture": ExtResource("jump_003")}, {"duration": 1.0, "texture": ExtResource("jump_004")}, {"duration": 1.0, "texture": ExtResource("jump_005")}, {"duration": 1.0, "texture": ExtResource("jump_006")}, {"duration": 1.0, "texture": ExtResource("jump_007")}, {"duration": 1.0, "texture": ExtResource("jump_008")}, {"duration": 1.0, "texture": ExtResource("jump_009")}, {"duration": 1.0, "texture": ExtResource("jump_010")}, {"duration": 1.0, "texture": ExtResource("jump_011")}, {"duration": 1.0, "texture": ExtResource("jump_012")}, {"duration": 1.0, "texture": ExtResource("jump_013")}, {"duration": 1.0, "texture": ExtResource("jump_014")}, {"duration": 1.0, "texture": ExtResource("jump_015")}, {"duration": 1.0, "texture": ExtResource("jump_016")}], "loop": false, "name": &"jump", "speed": 20}, {"frames": [{"duration": 1.0, "texture": ExtResource("double_jump_000")}, {"duration": 1.0, "texture": ExtResource("double_jump_001")}, {"duration": 1.0, "texture": ExtResource("double_jump_002")}, {"duration": 1.0, "texture": ExtResource("double_jump_003")}, {"duration": 1.0, "texture": ExtResource("double_jump_004")}, {"duration": 1.0, "texture": ExtResource("double_jump_005")}, {"duration": 1.0, "texture": ExtResource("double_jump_006")}, {"duration": 1.0, "texture": ExtResource("double_jump_007")}, {"duration": 1.0, "texture": ExtResource("double_jump_008")}, {"duration": 1.0, "texture": ExtResource("double_jump_009")}, {"duration": 1.0, "texture": ExtResource("double_jump_010")}, {"duration": 1.0, "texture": ExtResource("double_jump_011")}, {"duration": 1.0, "texture": ExtResource("double_jump_012")}, {"duration": 1.0, "texture": ExtResource("double_jump_013")}, {"duration": 1.0, "texture": ExtResource("double_jump_014")}, {"duration": 1.0, "texture": ExtResource("double_jump_015")}, {"duration": 1.0, "texture": ExtResource("double_jump_016")}], "loop": false, "name": &"double_jump", "speed": 20}]
+
 [node name="Player" type="CharacterBody2D"]
+
 script = ExtResource("1_player")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
 shape = SubResource("RectangleShape2D_player")
 
 [node name="Visual" type="Node2D" parent="."]
 
-[node name="Body" type="Polygon2D" parent="Visual"]
-polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-color = Color(0.2, 0.5, 0.9, 1)
+[node name="Body" type="AnimatedSprite2D" parent="Visual"]
 
-[node name="Eye" type="Polygon2D" parent="Visual"]
-polygon = PackedVector2Array(12, -14, 22, -14, 22, -4, 12, -4)
-color = Color(1, 1, 1, 1)
+position = Vector2(0, 2)
 
-[node name="Sword" type="Polygon2D" parent="Visual"]
-polygon = PackedVector2Array(32, -10, 46, -10, 46, 10, 32, 10)
-color = Color(0.95, 0.8, 0.2, 1)
+sprite_frames = SubResource("SpriteFrames_arjun")
 
-[node name="LegLeft" type="Polygon2D" parent="Visual"]
-polygon = PackedVector2Array(-28, 20, -6, 20, -6, 32, -28, 32)
-color = Color(0.1, 0.25, 0.5, 1)
+animation = &"idle"
 
-[node name="LegRight" type="Polygon2D" parent="Visual"]
-polygon = PackedVector2Array(6, 20, 28, 20, 28, 32, 6, 32)
-color = Color(0.1, 0.25, 0.5, 1)
+autoplay = "idle"

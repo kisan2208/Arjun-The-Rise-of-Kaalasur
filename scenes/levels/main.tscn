@@ -1,6 +1,6 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene format=3 uid="uid://doagor5yji7i4"]
 
-[ext_resource type="Script" path="res://scenes/levels/main.gd" id="1_mainscript"]
+[ext_resource type="Script" uid="uid://b2qojuvblc0rc" path="res://scenes/levels/main.gd" id="1_mainscript"]
 [ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="2_player"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
@@ -21,14 +21,14 @@ size = Vector2(256, 24)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_platform3"]
 size = Vector2(256, 24)
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1422162534]
 script = ExtResource("1_mainscript")
 
-[node name="Background" type="Polygon2D" parent="."]
-polygon = PackedVector2Array(0, 0, 1152, 0, 1152, 648, 0, 648)
+[node name="Background" type="Polygon2D" parent="." unique_id=1967675874]
 color = Color(0.05, 0.05, 0.09, 1)
+polygon = PackedVector2Array(0, 0, 1152, 0, 1152, 648, 0, 648)
 
-[node name="TitleLabel" type="Label" parent="."]
+[node name="TitleLabel" type="Label" parent="." unique_id=738082462]
 offset_left = 100.0
 offset_top = 40.0
 offset_right = 1052.0
@@ -37,7 +37,7 @@ theme_override_font_sizes/font_size = 36
 text = "Arjun: The Rise of Kaalasur"
 horizontal_alignment = 1
 
-[node name="InfoLabel" type="Label" parent="."]
+[node name="InfoLabel" type="Label" parent="." unique_id=246772275]
 offset_left = 100.0
 offset_top = 110.0
 offset_right = 1052.0
@@ -47,7 +47,7 @@ theme_override_font_sizes/font_size = 18
 text = "Milestone 1 — Movement Prototype"
 horizontal_alignment = 1
 
-[node name="ControlsLabel" type="Label" parent="."]
+[node name="ControlsLabel" type="Label" parent="." unique_id=1094209729]
 offset_left = 100.0
 offset_top = 155.0
 offset_right = 1052.0
@@ -57,65 +57,65 @@ theme_override_font_sizes/font_size = 16
 text = "Controls (test): Left / Right arrow ya A / D = chalna, Space = jump"
 horizontal_alignment = 1
 
-[node name="Ground" type="StaticBody2D" parent="."]
+[node name="Ground" type="StaticBody2D" parent="." unique_id=209023003]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1810003229]
 position = Vector2(576, 616)
 shape = SubResource("RectangleShape2D_ground")
 
-[node name="Visual" type="Polygon2D" parent="Ground"]
-polygon = PackedVector2Array(0, 584, 1152, 584, 1152, 648, 0, 648)
+[node name="Visual" type="Polygon2D" parent="Ground" unique_id=1749860657]
 color = Color(0.25, 0.2, 0.15, 1)
+polygon = PackedVector2Array(0, 584, 1152, 584, 1152, 648, 0, 648)
 
-[node name="LeftWall" type="StaticBody2D" parent="."]
+[node name="LeftWall" type="StaticBody2D" parent="." unique_id=1409560128]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=978570049]
 position = Vector2(16, 324)
 shape = SubResource("RectangleShape2D_leftwall")
 
-[node name="Visual" type="Polygon2D" parent="LeftWall"]
-polygon = PackedVector2Array(0, 0, 32, 0, 32, 648, 0, 648)
+[node name="Visual" type="Polygon2D" parent="LeftWall" unique_id=1524568526]
 color = Color(0.15, 0.12, 0.1, 1)
+polygon = PackedVector2Array(0, 0, 32, 0, 32, 648, 0, 648)
 
-[node name="RightWall" type="StaticBody2D" parent="."]
+[node name="RightWall" type="StaticBody2D" parent="." unique_id=1158952214]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=2126505417]
 position = Vector2(1136, 324)
 shape = SubResource("RectangleShape2D_rightwall")
 
-[node name="Visual" type="Polygon2D" parent="RightWall"]
-polygon = PackedVector2Array(1120, 0, 1152, 0, 1152, 648, 1120, 648)
+[node name="Visual" type="Polygon2D" parent="RightWall" unique_id=1068173107]
 color = Color(0.15, 0.12, 0.1, 1)
+polygon = PackedVector2Array(1120, 0, 1152, 0, 1152, 648, 1120, 648)
 
-[node name="Platform1" type="StaticBody2D" parent="."]
+[node name="Platform1" type="StaticBody2D" parent="." unique_id=1116883641]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1" unique_id=872856993]
 position = Vector2(320, 484)
 shape = SubResource("RectangleShape2D_platform1")
 
-[node name="Visual" type="Polygon2D" parent="Platform1"]
-polygon = PackedVector2Array(192, 472, 448, 472, 448, 496, 192, 496)
+[node name="Visual" type="Polygon2D" parent="Platform1" unique_id=1658454993]
 color = Color(0.3, 0.25, 0.18, 1)
+polygon = PackedVector2Array(192, 472, 448, 472, 448, 496, 192, 496)
 
-[node name="Platform2" type="StaticBody2D" parent="."]
+[node name="Platform2" type="StaticBody2D" parent="." unique_id=1865881376]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=1747434348]
 position = Vector2(832, 396)
 shape = SubResource("RectangleShape2D_platform2")
 
-[node name="Visual" type="Polygon2D" parent="Platform2"]
-polygon = PackedVector2Array(704, 384, 960, 384, 960, 408, 704, 408)
+[node name="Visual" type="Polygon2D" parent="Platform2" unique_id=1128893213]
 color = Color(0.3, 0.25, 0.18, 1)
+polygon = PackedVector2Array(704, 384, 960, 384, 960, 408, 704, 408)
 
-[node name="Platform3" type="StaticBody2D" parent="."]
+[node name="Platform3" type="StaticBody2D" parent="." unique_id=519918948]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=36634426]
 position = Vector2(448, 308)
 shape = SubResource("RectangleShape2D_platform3")
 
-[node name="Visual" type="Polygon2D" parent="Platform3"]
-polygon = PackedVector2Array(320, 296, 576, 296, 576, 320, 320, 320)
+[node name="Visual" type="Polygon2D" parent="Platform3" unique_id=1479616774]
 color = Color(0.3, 0.25, 0.18, 1)
+polygon = PackedVector2Array(320, 296, 576, 296, 576, 320, 320, 320)
 
-[node name="Player" parent="." instance=ExtResource("2_player")]
+[node name="Player" parent="." unique_id=461263243 instance=ExtResource("2_player")]
 position = Vector2(200, 552)
